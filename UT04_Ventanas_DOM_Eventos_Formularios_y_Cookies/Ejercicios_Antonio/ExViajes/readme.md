@@ -1,7 +1,7 @@
 Ejercicio 1: Generación dinámica de una lista de viajes con JavaScript
 Objetivo: Crear una página web que muestre dinámicamente una lista de viajes utilizando JavaScript y manipulación del DOM.
 1. Mostrar y ocultar viajes (4,5 puntos)
-    - [  ]En el HTML solo se permite añadir:
+    - [ x ]En el HTML solo se permite añadir:
         * La línea para enlazar el archivo JavaScript.
         * Una etiqueta con el texto «MOSTRAR VIAJES».
     - [  ]Al cargar la página, la lista estará oculta.
