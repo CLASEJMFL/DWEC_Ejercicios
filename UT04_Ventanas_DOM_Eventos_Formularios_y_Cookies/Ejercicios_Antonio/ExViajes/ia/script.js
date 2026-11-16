@@ -5,7 +5,7 @@ let viajes = [
         detalle_precio_total: "500 €",
         detalle_num_noches: "5 noches",
         precio_noche: "100 € por noche",
-        ruta_imagen: "imagenes/roma.jpg",
+        ruta_imagen: "../imagenes/roma.jpg",
         pie_imagen: "Coliseo de Roma"
     },
     {
@@ -14,7 +14,7 @@ let viajes = [
         detalle_precio_total: "600 €",
         detalle_num_noches: "4 noches",
         precio_noche: "150 € por noche",
-        ruta_imagen: "imagenes/francia.jpeg",
+        ruta_imagen: "../imagenes/francia.jpeg",
         pie_imagen: "Torre Eiffel"
     },
     {
@@ -23,8 +23,8 @@ let viajes = [
         detalle_precio_total: "300 €",
         detalle_num_noches: "3 noches",
         precio_noche: "100 € por noche",
-        ruta_imagen: "imagenes/sevilla.jpg",
-        pie_imagen: "Plaza de España"
+        ruta_imagen: "../imagenes/sevilla.jpg",
+        pie_imagen: "La Giralda"
     }
 ];
 
