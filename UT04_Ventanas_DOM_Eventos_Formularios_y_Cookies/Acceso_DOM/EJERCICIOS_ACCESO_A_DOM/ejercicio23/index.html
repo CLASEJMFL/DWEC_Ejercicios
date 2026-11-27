@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .acordeon-panel {
+            display: none;
+        }
+
+        .acordeon-panel.activo {
+            display: block;
+        }
+
+        .acordeon-btn.activo {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="acordeon">
+        <button class="acordeon-btn">Sección 1</button>
+        <div class="acordeon-panel">
+            <p>Contenido de la primera sección.</p>
+        </div>
+
+        <button class="acordeon-btn">Sección 2</button>
+        <div class="acordeon-panel">
+            <p>Contenido de la segunda sección.</p>
+        </div>
+
+        <button class="acordeon-btn">Sección 3</button>
+        <div class="acordeon-panel">
+            <p>Contenido de la tercera sección.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
