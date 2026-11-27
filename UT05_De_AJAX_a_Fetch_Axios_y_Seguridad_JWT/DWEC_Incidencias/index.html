@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestor de Incidencias - 2º DAW</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 850px; margin: 30px auto; padding: 0 15px; background: #f8fafc; color: #0f172a; }
+    .panel { background: #fff; padding: 20px; border-radius: 8px; border: 1px solid #e2e8f0; margin-bottom: 20px; }
+    .fila { display: flex; gap: 10px; flex-wrap: wrap; }
+    input, select, button { padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 14px; }
+    button { background: #2563eb; color: #fff; border: none; cursor: pointer; font-weight: 600; }
+    button:disabled { opacity: 0.6; cursor: not-allowed; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 15px; }
+    .card { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; }
+    .card.cerrada { opacity: 0.65; background: #f1f5f9; }
+    .badge { font-size: 12px; padding: 3px 8px; border-radius: 12px; background: #e0f2fe; color: #0369a1; }
+    .acciones { display: flex; gap: 8px; margin-top: 12px; }
+    .btn-cerrar { background: #16a34a; }
+    .btn-borrar { background: #dc2626; }
+    .estado-msg { grid-column: 1 / -1; text-align: center; padding: 30px; background: #fff; border-radius: 8px; border: 1px dashed #cbd5e1; }
+  </style>
+</head>
+<body>
+
+  <h1>🛠️ Gestor de Incidencias (2º DAW)</h1>
+
+  <!-- Formulario de alta (POST con FormData) -->
+  <section class="panel">
+    <h3>Nueva Incidencia</h3>
+    <form id="formIncidencia" class="fila">
+      <input type="text" name="titulo" placeholder="Describe el problema..." required style="flex: 2;">
+      <select name="categoria">
+        <option value="Hardware">Hardware</option>
+        <option value="Software">Software</option>
+        <option value="Red">Red</option>
+      </select>
+      <input type="file" name="archivo" accept="image/*,.pdf">
+      <button type="submit" id="btnCrear">Registrar</button>
+    </form>
+  </section>
+
+  <!-- Buscador inteligente (Debounce + AbortController) -->
+  <section class="panel">
+    <input type="search" id="inputBuscar" placeholder="🔍 Buscar incidencias en tiempo real..." style="width: 100%; box-sizing: border-box;">
+  </section>
+
+  <!-- Contenedor donde se pintan los 4 estados -->
+  <main id="grid" class="grid"></main>
+
+  <!-- Carga como Módulo ES -->
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

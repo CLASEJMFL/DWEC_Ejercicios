@@ -1,0 +1,26 @@
+{
+  "incidencias": [
+    {
+      "id": "1",
+      "titulo": "Proyector del aula 204 sin señal HDMI",
+      "categoria": "Hardware",
+      "estado": "abierta",
+      "adjunto": "foto_cable.jpg"
+    },
+    {
+      "id": "2",
+      "titulo": "Error de permisos en Docker al levantar PostgreSQL",
+      "categoria": "Software",
+      "estado": "cerrada",
+      "adjunto": null
+    },
+    {
+      "titulo": "sin internet",
+      "categoria": "Red",
+      "estado": "abierta",
+      "adjunto": null,
+      "id": "Mk0k9-QHazo"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

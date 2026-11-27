@@ -1,0 +1,9 @@
+gestor-incidencias/
+├── db.json                         # Base de datos simulada para json-server
+├── index.html                      # Interfaz HTML principal
+└── src/
+    ├── main.js                     # Orquestador (eventos + servicios + vista)
+    ├── services/
+    │   └── incidenciasService.js   # Capa de red (solo Fetch, cero DOM)
+    └── ui/
+        └── renderIncidencias.js    # Capa de vista (solo HTML, cero Fetch)
